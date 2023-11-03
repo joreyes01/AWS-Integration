@@ -5,26 +5,22 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.4</version>
+		<version>3.1.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dizstance</groupId>
-	<artifactId>amazon-services</artifactId>
+	<artifactId>spring-cloud-aws-s3-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>amazon-services</name>
-	<description>Demo project for Amazon Web Services</description>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -36,14 +32,22 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>s3</artifactId>
-			<version>2.20.52</version>
-		</dependency>
-		<dependency>
 			<groupId>io.awspring.cloud</groupId>
-			<artifactId>spring-cloud-aws-starter</artifactId>
+			<artifactId>spring-cloud-aws-starter-s3</artifactId>
 			<version>3.0.1</version>
+		</dependency>
+
+		<!-- Enable Autoconfigure for S3AsyncClient -->
+		<dependency>
+			<groupId>software.amazon.awssdk.crt</groupId>
+			<artifactId>aws-crt</artifactId>
+			<version>0.23.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>s3-transfer-manager</artifactId>
+			<version>2.20.109</version>
 		</dependency>
 	</dependencies>
 

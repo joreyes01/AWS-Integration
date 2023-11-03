@@ -48,7 +48,7 @@ public class Subscribers {
     }
 
     //GET
-    //Por defecto el método retorna un JSON de la clase <T> indicada, en este caso POST
+    //Por defecto el método retorna un JSON de la clase <T> indicada, en este caso Post
     //En caso de devolver un text, debería devolver un String
     @Bean
     public Supplier<Post> testResponseJson() {

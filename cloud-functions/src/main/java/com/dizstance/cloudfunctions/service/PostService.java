@@ -3,6 +3,7 @@ package com.dizstance.cloudfunctions.service;
 import com.dizstance.cloudfunctions.model.Post;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 
